@@ -15,6 +15,8 @@ with(win){
     win.deUnit.selection = 0;
 	win.paraUnit = add( "dropdownlist", [80,55,175,77], undefined, {items: ['Pixel: ','Polegadas:','Milímetros: ','Centímetros:','Pontos: ','Picas:','Cíceros:'], } );
     win.paraUnit.selection = 0;
+    win.sText = add( "statictext", [205,112,320,132], 'powerby lbrito 2013' );
+	win.sText.graphics.font = ScriptUI.newFont(win.sText.graphics.font.name, 'Bold', 10);
 	win.btnConverter = add( "button", [240,90,310,112], 'Converter' );
     win.btnConverter.onClick = function () {win.eTextParaUnit.text = loadConvertUnists() }
 	}
