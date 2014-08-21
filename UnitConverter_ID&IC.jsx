@@ -1,6 +1,6 @@
 ﻿#targetengine "session"
 /**
- * @@@BUILDINFO@@@ UnitConverter_ID&IC.jsx !Version! Fri Dec 20 2013 11:41:31 GMT-0200
+ * @@@BUILDINFO@@@ UnitConverter_ID&IC.jsx !Version! Wed Aug 20 2014 23:31:22 GMT-0300
  * @ autor : Luis Fernando Brito
  */
 var win = new Window("palette", 'Conversor de unidade InDesign e InCopy', [0, 0, 325, 125], );
@@ -44,8 +44,7 @@ function convertUnits(converterDe, converterPara)
 	var UnidadeDeValor = new UnitValue(converterDe);
 	if (UnidadeDeValor.type == "?")
 	{
-		$.writeln(" Tipo de unidade desconhecida.");
-		beep()
+		alert(" Tipo de unidade desconhecida.");
 	}
 	else
 	{
