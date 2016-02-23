@@ -38,7 +38,6 @@ function loadConvertUnists()
 	var converterPara = selectItem()[1];
 	return convertUnits(converterDe + "" + unidade, converterPara);
 }
-
 function convertUnits(converterDe, converterPara)
 {
 	var UnidadeDeValor = new UnitValue(converterDe);
